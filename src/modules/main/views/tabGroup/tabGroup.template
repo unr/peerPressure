@@ -1,0 +1,11 @@
+<div class='tab'>
+	<a class='black button icon-book'>&nbsp;Logs</a>
+</div>
+
+<div class='tab'>
+	<a class='orange button icon-tasks'>&nbsp;To-Do</a>
+</div>
+
+<div class='tab'>
+	<a class='black button icon-dashboard'>&nbsp;Profile</a>
+</div>
