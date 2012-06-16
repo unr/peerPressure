@@ -5,6 +5,7 @@ define (require, exports, module) ->
   TabGroup = require 'cs!modules/main/views/tabGroup/tabGroup'
   TopBar = require 'cs!modules/main/views/topBar/topBar'
   BaseView = require 'cs!modules/main/views/baseview/baseview'
+  TaskView = require 'cs!modules/main/views/taskView/taskView'
 
   #class definition
   class TabBarViewController extends Backbone.Router
@@ -30,7 +31,7 @@ define (require, exports, module) ->
       'profile': 'profile'
 
     listview: ->
-      @swap new BaseView text: 'baseview'
+      @swap new TaskView
 
     notifications: ->
       @swap new BaseView text: 'notifications'
