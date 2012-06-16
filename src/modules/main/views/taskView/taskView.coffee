@@ -5,14 +5,14 @@ define (require, exports, module) ->
   _ = require 'underscore'
   Backbone = require 'backbone'
 
-  template = require "tpl!./tabGroup.template"
+  template = require "tpl!./taskView.template"
 
-  class TabGroup extends Backbone.View
+  class TaskView extends Backbone.View
 
-    className: 'TabGroup'
+    className: 'TaskView'
 
     initialize: ->
-      #($ @el).addClass 'row'
+     # ($ @el).addClass 'row'
 
     render: ->
       ($ @el).html template()
