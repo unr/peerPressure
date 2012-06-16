@@ -9,6 +9,27 @@
 :: Page Name 2
 */
 
+html, body{
+  height: 100%;
+  overflow: hidden;
+}
+
+body{
+  display: -webkit-box;
+  -webkit-box-pack: start;
+  -webkit-box-align: stretch;
+  -webkit-box-orient: vertical;
+}
+
+body > div{
+  box-flex: 40;
+  -webkit-box-flex:40;
+}
+
+body > div:first-child, body div:last-child {
+  -webkit-box-flex: 1;
+}
+
 #body {
   background: black;
 }

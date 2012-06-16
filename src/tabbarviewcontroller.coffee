@@ -2,7 +2,7 @@ define (require, exports, module) ->
   Backbone = require 'backbone'
 
   #local requires
-  # Tabs = require 'cs!modules/main/views/tabs/tabs'
+  TabGroup = require 'cs!modules/main/views/tabGroup/tabGroup'
   TopBar = require 'cs!modules/main/views/topBar/topBar'
   BaseView = require 'cs!modules/main/views/baseview/baseview'
 
@@ -15,9 +15,12 @@ define (require, exports, module) ->
     initialize: (options)->
       @el = 'body'
       @$el = ($ @el)
+      @tabGroup = new TabGroup
+      @topBar = new TopBar
 
     skeleton: (views...)->
-      views.unshift new TopBar
+      views.unshift @topBar
+      views.push @tabGroup
       views
 
     routes:
