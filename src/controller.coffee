@@ -4,6 +4,7 @@ define (require, exports, module) ->
   #local requires
   #Tabs = require 'cs!modules/main/views/tabs/tabs'
   TopBar = require 'cs!modules/main/views/topBar/topBar'
+  TabGroup = require 'cs!modules/main/views/tabGroup/tabGroup'
 
   #class definition
   class Controller extends Backbone.Router
@@ -20,5 +21,8 @@ define (require, exports, module) ->
     attach: ->
       # Just a simple demonstration of some modules cooperating.
       #tabs = new Tabs
-      view = new TopBar
-      @body.append view.render().el
+      topBar = new TopBar
+      tabGroup = new TabGroup
+      @body.append topBar.render().el
+      @body.append "<div style='height: 391px;'>hello</div>"
+      @body.append tabGroup.render().el

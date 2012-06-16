@@ -1,0 +1,37 @@
+.TabGroup {
+  background: #222;
+  color: white;
+
+  
+  height: 50px; 
+
+  
+  
+  display: -webkit-box; 
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: stretch;
+
+  .tab {
+  	-webkit-box-flex: 200;
+  	-webkit-box-align: stretch;
+
+  	a {
+  		//gotta fix button styling
+  		padding: 16px 0 17px;
+  	}
+
+
+  	.orange {
+  		padding: 16px 0 23px;
+  		position: relative; z-index: 5;
+  		top: -6px; 
+
+  		border-radius: 5px 5px 0 0;
+
+  		
+  	}
+  	&:first-child .orange { border-radius: 0 5px 0 0; }
+		&:last-child .orange { border-radius: 5px 0 0 0; }
+  }
+
+}
