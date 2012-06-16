@@ -1,4 +1,4 @@
-## jQuery/Backbone/CoffeeScript using requirejs and optimization using r.js
+## Peer Pressure, A Social Todo App
 
 
 Setup:
