@@ -1,0 +1,22 @@
+.TopBar {
+  background: #222;
+  color: white;
+
+	.nice.small {
+		padding: 6px 0;
+		width: 50px; 
+		margin-left:10px;
+	}
+
+	.columns {
+		padding-top: 6px!important; 
+		padding-bottom: 6px!important; 
+	}
+
+	.logo { margin: 3px 0 0 0; }
+	.phone-two { text-align: center; }
+}
+
+
+// will be flexbox, 3 boxes. 
+// Middle will be flex 2, outside flex 1.

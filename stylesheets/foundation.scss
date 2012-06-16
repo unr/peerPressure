@@ -406,12 +406,14 @@
 	.red.button				{ background-color: #e91c21; }
 	.white.button			{ background-color: #e9e9e9; color: #333; }
 	.black.button			{ background-color: #141414; }
+	.orange.button			{ background-color: #fd7d00; }
 	
 	/* Nice Colors ---------- */
 	.nice.blue.button		{ border: 1px solid #0593dc;  }
 	.nice.red.button		{ border: 1px solid #b90b0b;  }
 	.nice.white.button		{ border: 1px solid #cacaca; text-shadow: none !important; }
 	.nice.black.button		{ border: 1px solid #000; }
+	.nice.orange.button		{ border: 1px solid #cf6600; }
 	
 	/* Hovers ---------- */
 	.button:hover, .button:focus 				{ background-color: #0192dd; color: #fff; }
@@ -419,6 +421,7 @@
 	.red.button:hover, .red.button:focus 		{ background-color: #d01217; 	}
 	.white.button:hover, .white.button:focus	{ background-color: #dadada; color: #333; }
 	.black.button:hover, .black.button:focus	{ background-color: #000; }
+	.orange.button:hover, .orange.button:focus	{ background-color: #df6e00; }
 	
 	/* Disabled ---------- */
 	.button.disabled, .button[disabled] { opacity: 0.6; cursor: default; }

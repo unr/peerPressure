@@ -1,0 +1,13 @@
+<div class="topbar row">
+
+    <div class="three phone-one columns">
+      
+    </div>
+    <div class="six phone-two columns">
+      <img src='/img/logo.png' alt='Peer Pressure' class='logo' />			
+    </div>
+    <div class='three phone-one columns'>
+    	<a href="#" class="nice small radius orange button icon-plus-sign">&nbsp;Item</a>
+    </div>
+
+</div>
