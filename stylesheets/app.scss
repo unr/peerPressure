@@ -14,11 +14,12 @@ html, body{
   overflow: hidden;
 }
 
-body{
+body {
   display: -webkit-box;
   -webkit-box-pack: start;
   -webkit-box-align: stretch;
   -webkit-box-orient: vertical;
+  background: black !important;
 }
 
 body > div{
@@ -28,10 +29,6 @@ body > div{
 
 body > div:first-child, body div:last-child {
   -webkit-box-flex: 1;
-}
-
-#body {
-  background: black;
 }
 
 

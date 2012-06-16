@@ -7,7 +7,18 @@
       <img src='/img/logo.png' alt='Peer Pressure' class='logo' />			
     </div>
     <div class='three phone-one columns'>
-    	<a href="#" class="nice small radius orange button icon-plus-sign">&nbsp;Item</a>
+    	<a id="add" class="nice small radius orange button icon-plus-sign">&nbsp;Item</a>
     </div>
 
+    <div id="myModal" class="reveal-modal">
+       <h2>Create New Todo:</h2>
+        <input type="text"></input>
+       <br />
+       <label>
+          Notify all my friends when/if I fail
+          <input type="checkbox"></input>
+        </label>
+       <a class="close-reveal-modal">&#215;</a>
+       <div id="go" class="nice small radius black button">Go</div>
+    </div>
 </div>

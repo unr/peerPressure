@@ -11,6 +11,9 @@ define (require, exports, module) ->
 
     className: 'TopBar'
 
+    events:
+      'click #add': 'add'
+
     initialize: ->
       ($ @el).addClass 'row'
 
@@ -18,3 +21,5 @@ define (require, exports, module) ->
       ($ @el).html template()
       this
 
+    add: ->
+      $('#myModal').reveal()
