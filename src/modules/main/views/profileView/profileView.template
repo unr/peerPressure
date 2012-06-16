@@ -1,0 +1,23 @@
+<div class='profile'>
+	<div class='pic'>
+		<img src='/img/profile-timeline.jpg' />
+		<img src='/img/overlay.png' class='overlay' />
+	</div>
+	<h1>Paul Morrison</h1>	
+</div>
+
+<div class='completed'>
+	<h2>To date, you've managed to:</h2>
+
+	<div class='numbers'>
+		<div class='top'>
+			<em>Utterly fail a total of</em>
+			<strong>420 <span>tasks</span></strong>
+		</div>
+		<div class='bottom'>
+			<em>And yet somehow you managed to complete</em>
+			<strong>1,337 <span>tasks</span></strong>
+		</div>
+
+	</div>
+</div>

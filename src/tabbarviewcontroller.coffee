@@ -6,6 +6,7 @@ define (require, exports, module) ->
   TopBar = require 'cs!modules/main/views/topBar/topBar'
   BaseView = require 'cs!modules/main/views/baseview/baseview'
   TaskView = require 'cs!modules/main/views/taskView/taskView'
+  ProfileView = require 'cs!modules/main/views/profileView/profileView'
 
   #class definition
   class TabBarViewController extends Backbone.Router
@@ -37,7 +38,7 @@ define (require, exports, module) ->
       @swap new BaseView text: 'notifications'
 
     profile: ->
-      @swap new BaseView text: 'profile'
+      @swap new ProfileView text: 'Paul Morrison'
 
     swap: (views...) ->
       frag = document.createDocumentFragment()
