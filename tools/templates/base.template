@@ -1,0 +1,22 @@
+define (require, exports, module) ->
+
+  #requires
+  $ = require '$'
+  _ = require 'underscore'
+<% if ( !~inheritsModule.indexOf('Backbone') ) { %>
+  <%= inheritsModule %> = require "cs!modules/<%= baseDir %>/<%= type %>/<%= inheritsModule.toLowerCase() %>/<%= inheritsModule.toLowerCase() %>"
+<% } else { %>
+  Backbone = require 'backbone'
+<% } %>
+  template = require "tpl!modules/<%= baseDir %>/<%= type %>/<%= klass.toLowerCase() %>/<%= klass.toLowerCase() %>.template"
+
+  class <%= klass %> extends <%= inheritsModule %>
+
+    initialize: ->
+  <% if(type === 'views') { %>
+    render: ->
+      ($ @el).html template()
+      this
+  <% } else { %>
+    
+  <% } %>

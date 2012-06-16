@@ -1,0 +1,37 @@
+#!/usr/bin/env coffee
+{Generator} = require '../generator/generator'
+FFI = require('node-ffi')
+
+#run command
+libc = new FFI.Library null,
+  "system": ["int32", ["string"]]
+run = libc.system
+
+parser = require("nomnom")
+
+parser.command('generate')
+  .opts
+    inherits: 
+      help: 'inherit from a module name'
+    dryrun:
+      abbr: 'dry'
+      flag: true
+      help: 'do not write to file system'
+  .callback (options)->
+    [command, base, type, view] = options['_']
+    unless command and base and type and view
+      console.log @_usage
+    else
+      Generator.generateTemplate options
+  .help("generate a file")
+  .usage("commands.coffee generate <top_level_module> view <name> --inherits other_view")
+
+#helper for rake file... until we pull it into tools
+#can do multiple rake commands like.. 'command rake build serve' and it will do it sync
+parser.command('rake')
+  .callback (options)->
+    opts = options['_']
+    (run "rake #{command}") for command in opts[1..] 
+  .help('run rake <command>')
+
+parser.parse()

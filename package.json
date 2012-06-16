@@ -1,0 +1,11 @@
+{
+  "name": "phoenix-web-client",
+  "version": "0.0.1",
+  "dependencies": {
+    "nomnom": "",
+    "underscore": "1.2.4",
+    "underscore.string": "",
+    "mkdirp": "",
+    "node-ffi": ""
+  }
+}

@@ -1,0 +1,5 @@
+.<%= klass %>{
+<% if ( !~inheritsModule.indexOf('Backbone')) { %>
+  @extend .<%= inheritsModule %>
+<% } %>
+}
