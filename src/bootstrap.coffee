@@ -3,7 +3,7 @@ define (require, exports, module) ->
 
   #local requires
   domReady = require 'domReady'
-  App = require 'cs!controller'
+  App = require 'cs!tabbarviewcontroller'
 
   ##Bootstrap the app here.
   domReady ->
