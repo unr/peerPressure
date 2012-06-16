@@ -12,13 +12,12 @@
 
     <div id="myModal" class="reveal-modal">
        <h2>Create New Todo:</h2>
-        <input type="text"></input>
-       <br />
-       <label>
-          Notify all my friends when/if I fail
+        <input type="text" class='input-text expand' placeholder='Be Awesome.'></input>
+       <label class='checklabel'>
           <input type="checkbox"></input>
+          Notify all my friends when/if I fail
         </label>
        <a class="close-reveal-modal">&#215;</a>
-       <div id="go" class="nice small radius black button">Go</div>
+       <div id="go" class="nice large radius black button">Go</div>
     </div>
 </div>

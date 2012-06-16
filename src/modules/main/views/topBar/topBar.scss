@@ -16,4 +16,16 @@
 	.logo { margin: 3px 0 0 0; }
 	.phone-two { text-align: center; }
   label {color: black}
+
+  .input-text { border-radius: 5px; font-weight: normal; }
+
+  .checklabel { 
+  	display: block;
+		background: #DDD;
+		padding: 6px;
+		font-size: 12px;
+		border-radius: 5px;
+		margin: 20px 0 20px 0;
+		border: solid 1px #999
+  }
 }
